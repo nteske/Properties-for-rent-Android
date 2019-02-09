@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parent_layout">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/editImageView"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/prikaz" />
+
+    <TextView
+        android:id="@+id/image_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="162dp"
+        android:text="Neki stan"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editImageView"
+        android:layout_marginBottom="1.5dp"
+        android:layout_marginLeft="172dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imgLocation"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="153dp"
+
+        android:layout_alignBottom="@+id/editImageView"
+        app:srcCompat="@drawable/ic_location"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/txtMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editImageView"
+        android:padding="2dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="300e"
+        android:textSize="15sp" />
+</RelativeLayout>

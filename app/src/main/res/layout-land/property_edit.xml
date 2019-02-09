@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parent_layout">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/editImageView"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/prikaz" />
+
+    <ImageButton
+        android:id="@+id/viewButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+
+        android:layout_marginStart="200dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:contentDescription="@string/button_view"
+        app:srcCompat="@mipmap/ic_view" />
+
+    <ImageButton
+        android:id="@+id/editButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="300dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:contentDescription="@string/button_edit"
+        app:srcCompat="@mipmap/ic_edit" />
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="400dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:contentDescription="@string/button_delete"
+        app:srcCompat="@mipmap/ic_delete" />
+
+    <TextView
+        android:id="@+id/txtNaslov"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editImageView"
+        android:layout_marginStart="200dp"
+        android:text="Naslov"
+        android:textAlignment="textStart" />
+</RelativeLayout>

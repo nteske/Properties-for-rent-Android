@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <Button
+        android:id="@+id/btnChangePass"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="#FFC80021"
+        android:text="Change password"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txtPrikFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etUsername"
+        android:layout_marginTop="51dp"
+        android:text="first:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/txtPrikLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtPrikFirstName"
+        android:layout_marginTop="107dp"
+        android:text="last:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <TextView
+                android:id="@+id/txtPrikUsername"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="175dp"
+                android:text="username:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/txtPrikazEmail"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etEmail"
+        android:layout_alignStart="@+id/txtPrikUsername"
+        android:text="email:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/txtPrikPhone"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/txtPrikUsername"
+        android:layout_below="@+id/etEmail"
+        android:text="phone:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imgPrikaz"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_alignEnd="@+id/txtPrikUsername"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/bbed" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPrikFirstName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:hint="first name"
+        android:inputType="textPersonName"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPrikLastName"
+        android:layout_alignStart="@+id/etFirstName"
+        android:ems="10"
+        android:hint="last name"
+        android:inputType="textPersonName"
+        android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtPrikUsername"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="54dp"
+                android:ems="10"
+                android:hint="username"
+                android:inputType="textPersonName"
+                android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etUsername"
+        android:layout_below="@+id/etUsername"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtPrikFirstName"
+        android:layout_alignTop="@+id/txtPrikPhone"
+        android:ems="10"
+        android:hint="+5555555555"
+        android:inputType="phone"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:background="#FF2C9C0A"
+        android:text="Save"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+                android:id="@+id/btnCamera"
+                android:layout_width="37dp"
+                android:layout_height="34dp"
+                android:layout_alignEnd="@+id/txtPrikazEmail"
+                android:layout_alignTop="@+id/txtPrikLastName"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_camera"
+                tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtPrikUsername"
+        android:layout_below="@+id/etPhone"
+        android:text="password:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtPrikFirstName"
+        android:layout_below="@+id/etPhone"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+</ScrollView>

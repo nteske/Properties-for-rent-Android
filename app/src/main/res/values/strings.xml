@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Property Rent</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_preview">PreviewActivity</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">Register</string>
+    <string name="register_text">Register</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="username">Username</string>
+    <string name="conf_password">Confirm password</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="address2">Address2 (Optional)</string>
+
+    <string name="error_valid_first_name">Valid first name is required.</string>
+    <string name="error_first_name_too_short">First name is too short.</string>
+    <string name="error_valid_last_name">Valid last name is required.</string>
+    <string name="error_last_name_too_short">Last name is too short.</string>
+    <string name="error_valid_username">Valid username is required.</string>
+    <string name="error_username_too_short">Username is too short.</string>
+
+    <string name="error_valid_password">Valid password is required.</string>
+    <string name="error_password_too_short">Password is too short.</string>
+
+    <string name="error_confirm_password">Please confirm password.</string>
+    <string name="error_confirm_password_dont_match">Passwords doeast match.</string>
+
+    <string name="error_valid_email">Valid email is required.</string>
+    <string name="error_email_too_short">Email is too short.</string>
+
+    <string name="error_valid_phone_number">Valid phone number is required.</string>
+    <string name="error_phone_number_too_short">Phone number is too short.</string>
+
+    <string name="error_address_number">Valid address is required.</string>
+    <string name="error_address_too_short">Address is too short.</string>
+
+    <string name="error_user_exists">User already exist!</string>
+    <string name="button_view">View</string>
+    <string name="button_edit">edit</string>
+    <string name="button_delete">delete</string>
+    <string name="create_title">Enter title</string>
+    <string name="create_deposit">Enter deposit in euros</string>
+    <string name="create_room" />
+    <string name="create_rooms">Enter number of rooms</string>
+    <string name="create_area">Enter area in m2</string>
+    <string name="craete_street">Enter street name</string>
+    <string name="create_create">Save apartment</string>
+    <string name="change_pass">Change password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+</resources>

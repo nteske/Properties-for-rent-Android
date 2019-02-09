@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PreviewActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/content_preview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/txtStreetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="282dp"
+        android:text="@string/app_name"
+        android:textSize="13sp"
+        tools:text="abcd" />
+
+    <TextView
+        android:id="@+id/txtStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtArea"
+        android:layout_marginEnd="153dp"
+        android:text="Street:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtDeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtStreet"
+        android:layout_alignTop="@+id/txtRooms"
+        android:text="Deposit:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="#000" />
+
+
+
+    <com.example.tesic.projekat.volley.AnimatedNetworkImageView
+        android:id="@+id/ivImageShow"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/prikaz" />
+
+    <com.example.tesic.projekat.volley.CircularNetworkImageView
+        android:id="@+id/ivImageUser"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/prikaz" />
+
+    <ImageButton
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:alpha="1"
+        android:background="@android:color/transparent"
+        android:onClick="goLeft"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/ic_left"
+        tools:alpha="1" />
+
+    <ImageButton
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnLeft"
+        android:background="@android:color/transparent"
+        android:onClick="goRight"
+        app:srcCompat="@mipmap/ic_right" />
+
+    <TextView
+        android:id="@+id/txtArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="27dp"
+        android:text="Area:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtRooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtArea"
+        android:layout_marginBottom="233dp"
+        android:text="Rooms:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtAreaNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="101dp"
+        android:gravity="right"
+        android:text="20"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txtRoomsNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtAreaNum"
+        android:layout_marginTop="327dp"
+        android:gravity="right"
+        android:text="5"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txtDepositNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtRoomsNum"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="103dp"
+        android:gravity="right"
+        android:text="500"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="224dp"
+        android:background="?android:attr/listDivider" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="52dp">
+
+            <ImageView
+                android:id="@+id/ivWifi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/txtArea"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="35dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bwirelessnetwork" />
+
+            <ImageView
+                android:id="@+id/ivHDTV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bhdtv" />
+
+            <ImageView
+                android:id="@+id/ivBBed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bbed" />
+
+            <ImageView
+                android:id="@+id/ivSBed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bsinglebed"
+                tools:srcCompat="@drawable/bsinglebed" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/ivAir"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bair" />
+
+            <ImageView
+                android:id="@+id/ivFridge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bfridge" />
+
+            <ImageView
+                android:id="@+id/ivStove"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bstoveoven" />
+
+            <ImageView
+                android:id="@+id/ivWash"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bwashingmachine" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/ivBath"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bbathtub" />
+
+            <ImageView
+                android:id="@+id/ivMicro"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bmicrowave" />
+
+            <ImageView
+                android:id="@+id/ivLandLine"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/blandline" />
+
+            <ImageView
+                android:id="@+id/ivFirePlace"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:alpha="0.9"
+                app:srcCompat="@drawable/bfireplace" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
